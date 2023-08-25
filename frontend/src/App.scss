@@ -1,0 +1,72 @@
+#social-planner-recurrent {
+  width: 90%;
+  text-align: center;
+
+  .cfg-publicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .post-box {
+    // Create ssas var
+    $max-size: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 15px 0;
+    // margin: 15px;
+
+    textarea {
+      width: 100%;
+      height: $max-size - 20px;
+      border: 0;
+    }
+
+    textarea:focus {
+      outline: none;
+    }
+
+    img {
+      max-height: $max-size;
+      border-radius: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: $max-size;
+      a {
+        margin: 3px;
+        padding: 3px;
+        background: #acaeaf;
+        font-size: 1.5em;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .big-button {
+    width: 80%;
+    border: 0;
+    border-radius: 10px;
+    background-color: #494c4e;
+    color: white !important;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+    margin: 0 auto;
+    padding: 15px;
+    // change mouse type
+    cursor: pointer;
+  }
+}
